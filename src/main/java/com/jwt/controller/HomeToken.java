@@ -26,4 +26,9 @@ public class HomeToken {
     public String getLoggedInUser(Principal principal){
         return principal.getName();
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return "test";
+    }
 }
